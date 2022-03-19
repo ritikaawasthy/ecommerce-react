@@ -1,12 +1,12 @@
 import "./App.css";
-import logo from "./logo.png";
-
+// import logo from "./logo.png";
+import {LandingPage} from "./pages"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      
+      <header >
       </header>
+      <LandingPage/>
     </div>
   );
 }
