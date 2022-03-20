@@ -1,0 +1,13 @@
+.auth-page-container{
+  height: 100vh;
+}
+
+.auth-page-form{
+  height: 20rem;
+}
+
+.auth-btn-container{
+  margin:1rem;
+  display: flex;
+  justify-content: center;
+}

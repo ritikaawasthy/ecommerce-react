@@ -21,6 +21,11 @@ a {
   font-family: 'Sacramento', cursive;
 }
 
+.center-top{
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .landing-footer-section {
   padding: 2rem;
   margin: 2rem;

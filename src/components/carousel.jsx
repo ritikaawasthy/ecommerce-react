@@ -1,4 +1,8 @@
-import {useEffect, useState} from "react";
+import {
+  useEffect,
+  useState
+}
+from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAnglesLeft, faAnglesRight} from '@fortawesome/free-solid-svg-icons';
 
@@ -6,7 +10,7 @@ function Carousel(props) {
   const slideList = props.slideList;
   const lastImgInd = slideList.length - 1;
   const slideCount = props.slideCount;
-  const autoPlayInterval= props.autoPlayInterval;
+  const autoPlayInterval = props.autoPlayInterval;
   const [slide, setSlide] = useState(slideList[0]);
 
   function slideBack() {
@@ -43,19 +47,50 @@ function Carousel(props) {
             <div className="background">
               <img src={slide.imgSrc} alt="" id="landing-img" className="background slider-img"></img>
             </div>
+            <div className="card-content inline center-top">
+              <h2 className="primary fw-li ">WOMEN
+              </h2>
+              <h2 className="primary fw-li ">MEN</h2>
+            </div>
             <div className="card-content inline fl-center">
-              <FontAwesomeIcon icon={faAnglesLeft} className="card-icon round left f-l" fixedWidth onClick={() => slideBack()}/>
+              <FontAwesomeIcon icon={faAnglesLeft} className="card-icon round left f-l" fixedWidth="fixedWidth" onClick={() => slideBack()}/>
               <div className="card-content white-trans-bg stacked">
                 <p>{slide.caption}</p>
               </div>
-              <FontAwesomeIcon icon={faAnglesRight} className="card-icon round right f-l" fixedWidth onClick={() => slideForward()}/>
+              <FontAwesomeIcon icon={faAnglesRight} className="card-icon round right f-l" fixedWidth="fixedWidth" onClick={() => slideForward()}/>
             </div>
+          </div>
+          <div className="list-container primary f-m">
+            <ul className="list-inline">
+              <li>|</li>
+              <li>
+                <i >Tshirts</i>
+              </li>
+              <li>|</li>
+              <li>
+                <i >Jeans</i>
+              </li>
+              <li>|</li>
+              <li>
+                <i >Dress</i>
+              </li>
+              <li>|</li>
+              <li>
+                <i >Bag</i>
+              </li>
+              <li>|</li>
+              <li>
+                <i >Shoes</i>
+              </li>
+              <li>|</li>
+            </ul>
           </div>
         </article>
       </section>);
 
     case 2:
-      return (<section className="grid-two-layout-container">
+      return (
+        <section className="grid-two-layout-container">
         <div className="container fl-end">
           <article className="grid-two-layout-left">
             <div className="card w-m">
@@ -64,7 +99,7 @@ function Carousel(props) {
                 <h3 className="fw-li">
                   <a href="templates/product.html">Women</a>
                 </h3>
-                <FontAwesomeIcon icon={faAnglesLeft} className="card-icon round left f-l" fixedWidth onClick={() => slideBack()}/>
+                <FontAwesomeIcon icon={faAnglesLeft} className="card-icon round left f-l" fixedWidth="fixedWidth" onClick={() => slideBack()}/>
                 <p>1920</p>
               </div>
             </div>
@@ -78,7 +113,7 @@ function Carousel(props) {
                 <h3 className="fw-li">
                   <a href="templates/product.html">Men</a>
                 </h3>
-                <FontAwesomeIcon icon={faAnglesRight} className="card-icon round left f-l" fixedWidth onClick={() => slideForward()}/>
+                <FontAwesomeIcon icon={faAnglesRight} className="card-icon round left f-l" fixedWidth="fixedWidth" onClick={() => slideForward()}/>
                 <p>1920</p>
               </div>
             </div>
@@ -88,7 +123,7 @@ function Carousel(props) {
 
     case 3:
       return (<section className="grid-three-layout-container">
-        <div className="container fl-end" >
+        <div className="container fl-end">
           <article className="grid-three-layout-left">
             <div className="card w-m">
               <img src={slide.imgSrcLeft} alt="" className="background"></img>
@@ -96,7 +131,7 @@ function Carousel(props) {
                 <h3 className="fw-li">
                   <a href="templates/product.html">Men</a>
                 </h3>
-                <FontAwesomeIcon icon={faAnglesLeft} className="card-icon round left f-l" fixedWidth onClick={() => slideBack()}/>
+                <FontAwesomeIcon icon={faAnglesLeft} className="card-icon round left f-l" fixedWidth="fixedWidth" onClick={() => slideBack()}/>
                 <p>1920</p>
               </div>
             </div>
@@ -125,7 +160,7 @@ function Carousel(props) {
                 <h3 className="fw-li">
                   <a href="templates/product.html">Men</a>
                 </h3>
-                <FontAwesomeIcon icon={faAnglesRight} className="card-icon round right f-l" fixedWidth onClick={() => slideForward()}/>
+                <FontAwesomeIcon icon={faAnglesRight} className="card-icon round right f-l" fixedWidth="fixedWidth" onClick={() => slideForward()}/>
                 <p>1920</p>
               </div>
             </div>
