@@ -9,22 +9,31 @@ export const products = [
   {
     _id: uuid(),
     title: "You Can WIN",
-    author: "Shiv Khera",
+    brand: "Shiv Khera",
     price: "5000",
     categoryName: "non-fiction",
+    sale: {inSale: true, salePrice: 3000},
+    instock: true,
+    picture: ""
   },
   {
     _id: uuid(),
-    title: "You are Winner",
-    author: "Junaid Qureshi",
-    price: "3000",
-    categoryName: "horror",
+    title: "You Can WIN",
+    brand: "Shiv Khera",
+    price: "5000",
+    categoryName: "non-fiction",
+    sale: {inSale: true, salePrice: 3000},
+    instock: true,
+    picture: ""
   },
   {
     _id: uuid(),
-    title: "Think and Grow Rich",
-    author: "Shiv Khera",
-    price: "1000",
-    categoryName: "fiction",
+    title: "You Can WIN",
+    brand: "Shiv Khera",
+    price: "5000",
+    categoryName: "non-fiction",
+    sale: {inSale: true, salePrice: 3000},
+    instock: true,
+    picture: ""
   },
 ];

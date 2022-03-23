@@ -6,3 +6,6 @@ export {SignupPage}
 
 import LoginPage from "./auth-page/loginPage";
 export {LoginPage}
+
+import ProductPage from "./product-page/productPage";
+export {ProductPage}
