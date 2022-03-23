@@ -4,10 +4,13 @@
 
 .auth-page-form{
   height: 20rem;
+  padding: 1rem;
 }
 
 .auth-btn-container{
   margin:1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
