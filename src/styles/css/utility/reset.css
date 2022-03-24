@@ -65,6 +65,9 @@ ul,ol{
 
 }
 
+input,i,button{
+  font-family:inherit;
+}
 
 .container{
   display: flex;
@@ -82,6 +85,10 @@ ul,ol{
 
 
 button:hover{
+  cursor: pointer;
+}
+
+.icon:hover{
   cursor: pointer;
 }
 
