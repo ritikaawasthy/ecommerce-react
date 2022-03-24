@@ -1,3 +1,4 @@
+import "../../styles/styles.css";
 import "./auth-page.css";
 import {useState} from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -49,20 +50,20 @@ const [errorMsg, setErrorMsg]= useState("");
                   <label className="input-label  f-m fw-li">First Name</label>
                 </div>
                 <div className="input-container primary-col ">
-                  <input placeholder=" " name="last-name" className="input w-m  f-m" type="text"></input>
+                  <input placeholder=" " name="last-name" className="input w-m  f-m primary-col" type="text"></input>
                   <label className="input-label  f-m fw-li">Last Name</label>
                 </div>
               </div>
               <div className="input-container primary-col ">
-                <input placeholder=" " name="email" className="input w-l  f-m" type="email"></input>
+                <input placeholder=" " name="email" className="input w-l f-m primary-col" type="email"></input>
                 <label className="input-label  f-m fw-li">Email</label>
               </div>
               <div className="input-container primary-col ">
-                <input placeholder=" " name="password" className="input w-l  f-m" type="password"></input>
+                <input placeholder=" " name="password" className="input w-l  f-m primary-col" type="password"></input>
                 <label className="input-label  f-m fw-li">Password</label>
               </div>
               <div className="input-container primary-col ">
-                <input placeholder=" " name="password2" className="input w-l  f-m" type="password" onChange={(event)=>passwordValidation(event)}></input>
+                <input placeholder=" " name="password2" className="input w-l  f-m primary-col" type="password" onChange={(event)=>passwordValidation(event)}></input>
                 <label className="input-label  f-m fw-li">Re-enter Password</label>
               </div>
               <div className="auth-btn-container">
